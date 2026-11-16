@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM PESAN</title>
+    <style>
+        .teks-merah{
+            color:red;
+            font-family:Courier;
+            font-weight: bold;
+        }
+
+        .teks-biru{
+            color: #69cfff;
+            font-family: cursive;
+            font-weight: bold;
+        }   
+
+        #ib{
+            color: beige;
+        }
+        input,select,textarea{
+            background-color: #69cfff;
+            border: 2px solid;
+            border-radius: 25px;
+
+        }
+        input[type="date"]{
+            background-color:#69cfff;
+            border: 2px solid cyan;
+            border-radius: 25px;
+        }
+
+        .btn{
+            color: #d6f2ff;
+            background-color: #94ddff   ;
+            border: 2px solid #69cfff ;
+            border-radius: 25px;
+        }
+
+        .btn:hover{
+            color: #94ddff;
+            background-color: #d6f2ff   ;
+            border: 2px solid #69cfff ;
+            border-radius: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="0" width="%" style="border-collapse: collapse; border-color: black; border-style: solid; background-color: white;
+        align-content: left;">
+        <tbody>
+            <form method="POST" action="postpesan.php" target="blank">
+            <tr>
+                <td class="teks-biru">Name</td>
+                <td class="teks-biru">:</td>
+                <td><input type="text" placeholder="Your Name" name="p_nm"></td>
+            </tr>
+
+            <tr>
+                <td class="teks-biru">Email</td>
+                <td class="teks-biru">:</td>
+                <td><input type="email" placeholder="Email @gmail.com" name="p_email"></td>
+            </tr>
+
+            <tr>
+                <td class="teks-biru">Pesan</td>
+                <td class="teks-biru">:</td>
+                <td><textarea rows="11" style="height: 30px; width: 170px; " name="pesan"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="kirim"> <input type="reset" value="reset"></td>
+            </tr>
+
+            </form>
+        </tbody>
+    </table>
+</body>
+</html>
